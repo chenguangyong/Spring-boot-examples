@@ -45,7 +45,7 @@ public class LoginController {
      * @auther: chen
      * @date: 2018/10/24 16:47
      */
-    @RequestMapping(value ="center")
+    @RequestMapping(value ="/center")
     public String center(ModelMap map){
         map.put("users",parseUsers());
         map.put("title","用户列表");
