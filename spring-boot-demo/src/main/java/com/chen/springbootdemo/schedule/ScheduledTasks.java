@@ -51,7 +51,7 @@ public class ScheduledTasks {
      * @Title: testCron
      * @Description:cron接受cron表达式，根据cron表达式确定定时规则
      */
-    @Scheduled(cron = "*/6 * * * * ?")
+    //@Scheduled(cron = "*/6 * * * * ?")
     public void testCron() {
         log.info(MessageFormat.format("core: 第{0}次执行方法", cronCount++));
     }

@@ -1,6 +1,7 @@
 package com.chen.springbootdemo.controller;
 
 import com.chen.springbootdemo.service.UserService;
+import com.chen.springbootdemo.utils.QRCodeUtil;
 import com.winter.model.User;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -38,6 +39,35 @@ public class LoginController {
         mv.setViewName("login");
         return mv;
     }
+    /**
+     * 功能描述:
+     * @param:
+     * @return:
+     * @auther: chen
+     * @date: 2018/12/10 18:00
+     */
+    @RequestMapping("/erweima")
+    public String erweima(){
+        try {
+            QRCodeUtil.testEncode();
+        }catch (Exception e){
+            e.printStackTrace();
+        }
+
+        return "hhhhhh";
+    }
+
+    @RequestMapping("/erweima1")
+    public String erweima1(){
+        try {
+            QRCodeUtil.testDecode();
+        }catch (Exception e){
+            e.printStackTrace();
+        }
+
+        return "hhhhhh";
+    }
+
     /**
      * 功能描述:表格展示用户数据
      * @param:
