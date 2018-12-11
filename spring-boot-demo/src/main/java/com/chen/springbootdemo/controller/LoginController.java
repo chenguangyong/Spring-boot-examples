@@ -22,7 +22,6 @@ public class LoginController {
     @Autowired
     private UserService userService;
 
-
     private static Logger log = LoggerFactory.getLogger(LoginController.class);
    
     /**
@@ -46,7 +45,7 @@ public class LoginController {
      * @auther: chen
      * @date: 2018/12/10 18:00
      */
-    @RequestMapping("/erweima")
+    @RequestMapping("/erweima1")
     public String erweima(){
         try {
             QRCodeUtil.testEncode();
@@ -54,19 +53,10 @@ public class LoginController {
             e.printStackTrace();
         }
 
-        return "hhhhhh";
+        return "login";
     }
 
-    @RequestMapping("/erweima1")
-    public String erweima1(){
-        try {
-            QRCodeUtil.testDecode();
-        }catch (Exception e){
-            e.printStackTrace();
-        }
 
-        return "hhhhhh";
-    }
 
     /**
      * 功能描述:表格展示用户数据
