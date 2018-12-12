@@ -123,24 +123,30 @@
             <artifactId>javase</artifactId>
             <version>3.3.0</version>
         </dependency>
-
-        <!-- json -->
-        <dependency>
+        <dependency> <!-- json -->
             <groupId>com.alibaba</groupId>
             <artifactId>fastjson</artifactId>
             <version>1.2.39</version>
         </dependency>
-        <!-- 读写office文件-->
-        <dependency>
+        <dependency><!-- 读写office文件-->
             <groupId>org.apache.poi</groupId>
             <artifactId>poi</artifactId>
             <version>4.0.0</version>
         </dependency>
-        <!-- springboot热部署 -->
-        <dependency>
+        <dependency><!-- 添加springboot热部署 -->
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-devtools</artifactId>
             <optional>true</optional>
+        </dependency>
+        <dependency> <!-- SpringBoot整合Swagger2-->
+            <groupId>io.springfox</groupId>
+            <artifactId>springfox-swagger2</artifactId>
+            <version>2.7.0</version>
+        </dependency>
+        <dependency> <!-- SpringBoot整合Swagger2-->
+            <groupId>io.springfox</groupId>
+            <artifactId>springfox-swagger-ui</artifactId>
+            <version>2.7.0</version>
         </dependency>
 
 
